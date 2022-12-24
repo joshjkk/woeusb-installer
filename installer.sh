@@ -119,5 +119,5 @@ then
     install 1
 # Unknown arg passed
 else
-    echo "Uknown argument '$1' passed, use '$usage' for help"
+    echo "Uknown argument '$1' passed, use '$0 -h' for help"
 fi
