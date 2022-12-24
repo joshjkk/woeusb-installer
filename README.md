@@ -63,6 +63,7 @@ WoeUSB will not be able to function without these software installed in their pr
 * [GNU Bash](https://www.gnu.org/software/bash/)  
   For interpreting and executing the program logic  
   _Requires >= 4.3_
+  > Pre-installed
 * [The GNU Core Utilities(Coreutils)](https://www.gnu.org/software/coreutils/)  
   For common Unix utilities necessary for basic operations
 * [util-linux](https://github.com/karelzak/util-linux)  
@@ -74,6 +75,7 @@ WoeUSB will not be able to function without these software installed in their pr
 * [GNU GRUB](https://www.gnu.org/software/grub/)  
   For installing the bootstrap code used in a Legacy PC boot  
   We specifically requires modules of the i386-pc architecture, for Debian-based distributions these are provided via the grub-pc-bin package
+  > Pre-installed
 * [GNU Parted](https://www.gnu.org/software/parted/)  
   For manipulating disk partition table and partitions
 * [GNU Wget](https://www.gnu.org/software/wget/)  
