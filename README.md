@@ -20,7 +20,9 @@ You won't be able to run the script if you don't give the script permissions to 
 chmod +x ./installer.sh
 ```
 
-### **Default Installation**
+### Installation
+
+#### **Default Installation**
 
 *(required & optional dependencies, may cause errors)*
 
@@ -28,7 +30,7 @@ chmod +x ./installer.sh
 sudo ./installer.sh
 ```
 
-### **Required Dependencies Only**
+#### **Required Installation Only**
 
 Parameter: ```--required``` ```-r```
 
@@ -38,13 +40,23 @@ Example:
 sudo ./installer.sh -r
 ```
 
+### Help
+
+Parameter: ```--help``` ```-h```
+
+Example:
+
+``` bash
+sudo ./installer.sh -h
+```
+
 ## Dependencies
 
 *This is the list of dependencies that WoeUSB Installer will install.*
 
 The following are the dependencies that WoeUSB requires, in one way or another.  Refer [the wiki](https://github.com/WoeUSB/WoeUSB/wiki/Dependencies) for distro-specific information.
 
-### **Required**
+### Required
 
 WoeUSB will not be able to function without these software installed in their proper locations:
 
@@ -73,7 +85,7 @@ WoeUSB will not be able to function without these software installed in their pr
 * [wimlib](https://wimlib.net/)  
   For splitting install.wim Windows Imaging (WIM) archive so that archives over 4GiB can be fit in an FAT32 filesystem
 
-### **Optional**
+### Optional
 
 Without the following dependencies WoeUSB will still able to run, but some functionalities will be unavailable:
 
