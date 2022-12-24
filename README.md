@@ -1,6 +1,6 @@
 # WoeUSB Installer
 
-An dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on [Debian GNU/Linux](https://en.wikipedia.org/wiki/Debian) systems.
+A dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on [Debian GNU/Linux](https://en.wikipedia.org/wiki/Debian) systems.
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/joshjkk/woeusb-installer) ![GitHub file size in bytes](https://img.shields.io/github/size/joshjkk/woeusb-installer/installer.sh)
 
