@@ -10,45 +10,56 @@ A dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on 
 
 This script was created because from my experience, it takes ages to install all the dependencies, and it would be a big help for myself and maybe others if it was all automated.
 
+## Build
+
+### Prerequisites
+
+#### ncurses
+
+``` bash
+sudo apt install libncurses5-dev libncursesw5-dev
+```
+
+#### make
+
+``` bash
+$ sudo apt install build-essential
+```
+
+### Building the ```.exe``` File
+
+``` bash
+sudo make woeusb_installer
+```
+
+## Installation
+
+To install WoeUSB Installer, clone the repo and follow the Build instructions:
+
+``` bash
+git clone https://github.com/joshjkk/woeusb-installer.git && cd woeusb_installer
+```
+
+While inside ```woeusb_installer```:
+
+``` bash
+sudo make woeusb_installer
+```
+
+```woeusb_installer.exe``` will be found in the ```./bin/woeusb_installer.exe```.
+
 ## Usage
 
-### Give Execution Permissions
-
-You won't be able to run the script if you don't give the script permissions to execute:
-
 ``` bash
-chmod +x ./installer.sh
+sudo ./woeusb_installer [args]
 ```
 
-### Installation
+Where args are optional arguments.
 
-#### **Default Installation**
+### Args
 
-*(required & optional dependencies, may cause errors)*
-
-``` bash
-sudo ./installer.sh
-```
-
-#### **Required Installation Only**
-
-Parameter: ```--required``` ```-r```
-
-Example:
-
-``` bash
-sudo ./installer.sh -r
-```
-
-### Help
-
-Parameter: ```--help``` ```-h```
-
-Example:
-
-``` bash
-sudo ./installer.sh -h
-```
+- ```--version```, ```-v``` - Show the current installed version of WoeUSB Installer
+- ```--help```, ```-h``` - Show the help menu
 
 ## Dependencies
 
