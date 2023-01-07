@@ -1,8 +1,8 @@
 # WoeUSB Installer
 
-A dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on [Debian GNU/Linux](https://en.wikipedia.org/wiki/Debian) systems.
+### A dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on [Debian GNU/Linux](https://en.wikipedia.org/wiki/Debian) systems.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/joshjkk/woeusb-installer) ![GitHub file size in bytes](https://img.shields.io/github/size/joshjkk/woeusb-installer/installer.sh)
+![GitHub file size in bytes](https://img.shields.io/github/size/joshjkk/woeusb-installer/install.sh) ![GitHub](https://img.shields.io/github/license/joshjkk/woeusb-installer) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/joshjkk/woeusb-installer)
 
 Hunting each prerequisite for WoeUSB has always been a pain for me, and probably others, so I decided to make a script to do it for you.
 
