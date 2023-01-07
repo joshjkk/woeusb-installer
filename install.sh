@@ -109,14 +109,17 @@ install() {
 if [ $# -lt 1 ];
 then
     install 0
+
 # Show help menu
 elif [[ ($1 = "--help" || $1 = "-h") ]];
 then
     usage
+
 # 'required' installation
 elif [[ ($1 = "--required" || $1 = "-r") ]];
 then
     install 1
+
 # Unknown arg passed
 else
     echo "Uknown argument '$1' passed, use '$0 -h' for help"
