@@ -4,62 +4,36 @@ A dependency installer script for [WoeUSB](https://github.com/WoeUSB/WoeUSB) on 
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/joshjkk/woeusb-installer) ![GitHub file size in bytes](https://img.shields.io/github/size/joshjkk/woeusb-installer/installer.sh)
 
-## About
-
-[WoeUSB](https://github.com/WoeUSB/WoeUSB) is a Microsoft Windows® USB installation media preparer for GNU+Linux, [WoeUSB Installer](https://github.com/joshjkk/woeusb-installer) is a script that installs all the dependencies needed to run WoeUSB on [Debian GNU/Linux](https://en.wikipedia.org/wiki/Debian).
-
-This script was created because from my experience, it takes ages to install all the dependencies, and it would be a big help for myself and maybe others if it was all automated.
-
-## Build
-
-### Prerequisites
-
-#### ncurses
-
-``` bash
-sudo apt install libncurses5-dev libncursesw5-dev
-```
-
-#### make
-
-``` bash
-$ sudo apt install build-essential
-```
-
-### Building the ```.exe``` File
-
-``` bash
-sudo make woeusb_installer
-```
-
-## Installation
-
-To install WoeUSB Installer, clone the repo and follow the Build instructions:
-
-``` bash
-git clone https://github.com/joshjkk/woeusb-installer.git && cd woeusb_installer
-```
-
-While inside ```woeusb_installer```:
-
-``` bash
-sudo make woeusb_installer
-```
-
-```woeusb_installer.exe``` will be found in the ```./bin/woeusb_installer.exe```.
+Hunting each prerequisite for WoeUSB has always been a pain for me, and probably others, so I decided to make a script to do it for you.
 
 ## Usage
 
 ``` bash
-sudo ./woeusb_installer [args]
+sudo ./install.sh [args]
 ```
 
-Where args are optional arguments.
+Where [args] are optional arguments.
 
-### Args
+### Required Installation (recommended)
 
-- ```--version```, ```-v``` - Show the current installed version of WoeUSB Installer
-- ```--help```, ```-h``` - Show the help menu
+The default installation may give errors, whereas the required installation doesn't but both work with WoeUSB.
+
+``` bash
+sudo ./install.sh -r
+```
+
+### Full Installation
+
+``` bash
+sudo ./install.sh
+```
+
+This installation is not recommended as it may give errors installing certain dependencies, which is entirely dependant on your system.
+
+### Arguments
+
+- ```--help```, ```-h``` - Show the help menu.
+- ```--required```, ```-r``` - Choose the required installation method.
 
 ## Dependencies
 
